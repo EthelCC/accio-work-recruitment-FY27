@@ -13,9 +13,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'accio-dark': '#050814',
-                        'accio-navy': '#0a1029',
-                        'accio-card': '#111936',
+                        'accio-dark': '#ffffff',
+                        'accio-navy': '#f8fafc',
+                        'accio-card': '#ffffff',
                         'accio-orange': '#ff6a00',
                         'accio-gold': '#ffb84d',
                         'accio-cyan': '#00d4ff',
@@ -58,8 +58,8 @@
         }
 
         body {
-            background-color: #050814;
-            color: #f0f4ff;
+            background-color: #f8fafc;
+            color: #1f2937;
             font-family: "Noto Sans SC", sans-serif;
             overflow-x: hidden;
         }
@@ -72,7 +72,7 @@
             height: 100%;
             pointer-events: none;
             z-index: 50;
-            opacity: 0.03;
+            opacity: 0.02;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
         }
 
@@ -87,7 +87,7 @@
         .orb-1 {
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(255, 106, 0, 0.18) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 106, 0, 0.10) 0%, transparent 70%);
             top: -200px;
             right: -100px;
             animation: float 12s ease-in-out infinite;
@@ -96,7 +96,7 @@
         .orb-2 {
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.12) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
             bottom: 10%;
             left: -150px;
             animation: float 10s ease-in-out infinite reverse;
@@ -105,7 +105,7 @@
         .orb-3 {
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(45, 98, 255, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(45, 98, 255, 0.08) 0%, transparent 70%);
             top: 40%;
             right: 10%;
             animation: float 14s ease-in-out infinite;
@@ -137,8 +137,8 @@
         }
 
         .job-card {
-            background: rgba(17, 25, 54, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(0, 0, 0, 0.06);
             backdrop-filter: blur(12px);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -146,28 +146,28 @@
         .job-card:hover {
             transform: translateY(-4px);
             border-color: rgba(255, 106, 0, 0.4);
-            box-shadow: 0 20px 40px rgba(255, 106, 0, 0.12);
+            box-shadow: 0 20px 40px rgba(255, 106, 0, 0.10);
         }
 
         .category-tab {
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .category-tab.active {
             background: linear-gradient(135deg, rgba(255, 106, 0, 0.2), rgba(0, 212, 255, 0.15));
             border-color: rgba(255, 106, 0, 0.5);
-            color: #ffb84d;
+            color: #ff6a00;
         }
 
         .category-tab:hover:not(.active) {
             border-color: rgba(255, 255, 255, 0.25);
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(0, 0, 0, 0.03);
         }
 
         .tag {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .accent-line {
@@ -178,8 +178,8 @@
 
         .hero-grid {
             background-image:
-                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+                linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
             background-size: 80px 80px;
             mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
         }
@@ -191,11 +191,11 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(255, 106, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 106, 0, 0.25);
         }
 
         .btn-secondary {
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease;
         }
 
@@ -205,7 +205,7 @@
         }
 
         .stat-card {
-            background: rgba(17, 25, 54, 0.4);
+            background: rgba(255, 255, 255, 0.70);
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
 
@@ -253,16 +253,16 @@
     <div class="fixed inset-0 hero-grid -z-10"></div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-40 border-b border-white/5 bg-accio-dark/80 backdrop-blur-md">
+    <nav class="fixed top-0 left-0 right-0 z-40 border-b border-gray-200 bg-white/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3">
-                <span class="accio-logo h-7 md:h-8 w-14 md:w-16" role="img" aria-label="Accio Work"></span>
+                <span class="font-display font-bold text-xl md:text-2xl text-gradient italic">Accio Work</span>
             </a>
-            <div class="hidden md:flex gap-8 text-sm text-gray-300">
-                <a href="#about" class="hover:text-accio-cyan transition-colors">业务介绍</a>
-                <a href="#why" class="hover:text-accio-cyan transition-colors">团队优势</a>
-                <a href="#roles" class="hover:text-accio-cyan transition-colors">招聘岗位</a>
-                <a href="#apply" class="hover:text-accio-cyan transition-colors">投递方式</a>
+            <div class="hidden md:flex gap-8 text-sm text-gray-600">
+                <a href="#about" class="hover:text-accio-blue transition-colors">业务介绍</a>
+                <a href="#why" class="hover:text-accio-blue transition-colors">团队优势</a>
+                <a href="#roles" class="hover:text-accio-blue transition-colors">招聘岗位</a>
+                <a href="#apply" class="hover:text-accio-blue transition-colors">投递方式</a>
             </div>
         </div>
     </nav>
@@ -271,22 +271,22 @@
     <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
             <div class="section-fade">
-                <p class="text-accio-cyan text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-medium">Alibaba International · Native AI Agent</p>
+                <p class="text-accio-blue text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-medium">Alibaba International · Native AI Agent</p>
                 <h1 class="leading-tight mb-8">
                     <span class="block font-display text-5xl md:text-7xl lg:text-8xl font-black text-gradient italic mb-2 md:mb-4">Accio Work</span>
                     <span class="block font-display text-5xl md:text-7xl lg:text-8xl font-black text-gradient italic">期待你的加入</span>
                 </h1>
-                <p class="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+                <p class="text-lg md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
                     Native AI Agent<br class="hidden md:block">
                     具备通用 Agent 能力，同时也是全球首个专为商业打造的 Native AI Agent 平台<br class="hidden md:block">
                     与我们一起，用 AI 重新定义 30 万亿美金的全球 B2B 贸易
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#roles" class="btn-primary px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center gap-2">
+                    <a href="#roles" class="btn-primary px-8 py-4 rounded-full text-gray-900 font-bold text-lg inline-flex items-center justify-center gap-2">
                         查看在招岗位
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                     </a>
-                    <a href="#apply" class="btn-secondary px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center gap-2">
+                    <a href="#apply" class="btn-secondary px-8 py-4 rounded-full text-gray-900 font-bold text-lg inline-flex items-center justify-center gap-2">
                         联系 HR 咨询
                     </a>
                 </div>
@@ -295,19 +295,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 section-fade" style="transition-delay: 0.2s;">
                 <div class="stat-card rounded-2xl p-6 text-center">
                     <div class="text-3xl md:text-4xl font-display font-bold text-gradient mb-2">1000万+</div>
-                    <div class="text-sm text-gray-400">AI ToB 出海用户</div>
+                    <div class="text-sm text-gray-500">AI ToB 出海用户</div>
                 </div>
                 <div class="stat-card rounded-2xl p-6 text-center">
                     <div class="text-3xl md:text-4xl font-display font-bold text-gradient mb-2">190+</div>
-                    <div class="text-sm text-gray-400">覆盖国家与地区</div>
+                    <div class="text-sm text-gray-500">覆盖国家与地区</div>
                 </div>
                 <div class="stat-card rounded-2xl p-6 text-center">
                     <div class="text-3xl md:text-4xl font-display font-bold text-gradient mb-2">150万+</div>
-                    <div class="text-sm text-gray-400">优质供应商</div>
+                    <div class="text-sm text-gray-500">优质供应商</div>
                 </div>
                 <div class="stat-card rounded-2xl p-6 text-center">
                     <div class="text-3xl md:text-4xl font-display font-bold text-gradient mb-2">10亿+</div>
-                    <div class="text-sm text-gray-400">多模态商品</div>
+                    <div class="text-sm text-gray-500">多模态商品</div>
                 </div>
             </div>
         </div>
@@ -319,12 +319,12 @@
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="section-fade">
                     <div class="accent-line mb-6"></div>
-                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">Accio</h2>
-                    <p class="text-accio-gold text-lg font-medium mb-6">全球首个 B2B AI 原生应用</p>
-                    <p class="text-gray-300 leading-relaxed mb-6">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900">Accio</h2>
+                    <p class="text-accio-orange text-lg font-medium mb-6">全球首个 B2B AI 原生应用</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         由阿里国际站（Alibaba.com）于 2024 年 11 月推出，Accio 通过 AI 技术重新定义全球 B2B 跨境贸易流程，实现从"AI 搜索""Chatbot"到"Agent"的进化。
                     </p>
-                    <ul class="space-y-4 text-gray-300">
+                    <ul class="space-y-4 text-gray-600">
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accio-orange mt-2.5 flex-shrink-0"></span>
                             <span>自研 AI 搜索引擎，稳定支撑亿级询盘，支持 7 种主流语言</span>
@@ -343,7 +343,7 @@
                         </li>
                     </ul>
                     <div class="mt-8">
-                        <a href="https://www.accio.com/" target="_blank" class="text-accio-cyan hover:text-accio-gold transition-colors inline-flex items-center gap-2">
+                        <a href="https://www.accio.com/" target="_blank" class="text-accio-blue hover:text-accio-orange transition-colors inline-flex items-center gap-2">
                             访问 Accio 官网
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                         </a>
@@ -351,11 +351,11 @@
                 </div>
                 <div class="section-fade" style="transition-delay: 0.15s;">
                     <div class="relative">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-accio-orange/20 to-accio-cyan/20 rounded-3xl blur-2xl"></div>
+                        <div class="absolute -inset-4 bg-gradient-to-r from-accio-orange/10 to-accio-cyan/10 rounded-3xl blur-2xl"></div>
                         <div class="relative job-card rounded-3xl p-8 md:p-10 highlight-border">
                             <div class="text-6xl mb-6">🌍</div>
                             <h3 class="font-display text-2xl font-bold mb-4">市场荣誉</h3>
-                            <div class="space-y-4 text-gray-300">
+                            <div class="space-y-4 text-gray-600">
                                 <div class="flex items-center gap-3">
                                     <span class="text-accio-gold">★</span>
                                     <span>WAIC SAIL 大奖</span>
@@ -373,9 +373,9 @@
                                     <span>全球首个 B2B AI Agent 标杆</span>
                                 </div>
                             </div>
-                            <div class="mt-8 pt-6 border-t border-white/10">
-                                <div class="text-sm text-gray-400 mb-1">上线时间</div>
-                                <div class="text-xl font-bold text-white">2024 年 11 月 13 日</div>
+                            <div class="mt-8 pt-6 border-t border-gray-200">
+                                <div class="text-sm text-gray-500 mb-1">上线时间</div>
+                                <div class="text-xl font-bold text-gray-900">2024 年 11 月 13 日</div>
                             </div>
                         </div>
                     </div>
@@ -385,48 +385,48 @@
     </section>
 
     <!-- About Accio Work -->
-    <section class="relative py-24 md:py-32 bg-gradient-to-b from-transparent via-accio-navy/30 to-transparent">
+    <section class="relative py-24 md:py-32 bg-gradient-to-b from-transparent via-gray-100/50 to-transparent">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="order-2 md:order-1 section-fade">
                     <div class="relative">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-accio-cyan/20 to-accio-blue/20 rounded-3xl blur-2xl"></div>
+                        <div class="absolute -inset-4 bg-gradient-to-r from-accio-cyan/10 to-accio-blue/10 rounded-3xl blur-2xl"></div>
                         <div class="relative job-card rounded-3xl p-8 md:p-10 highlight-border">
                             <div class="text-6xl mb-6">🤖</div>
                             <h3 class="font-display text-2xl font-bold mb-4">核心能力</h3>
                             <div class="grid grid-cols-1 gap-4">
                                 <div class="tag rounded-xl p-4">
-                                    <div class="font-bold text-accio-cyan mb-1">7×24 独立执行</div>
-                                    <div class="text-sm text-gray-400">长流程复杂任务自动完成</div>
+                                    <div class="font-bold text-accio-blue mb-1">7×24 独立执行</div>
+                                    <div class="text-sm text-gray-500">长流程复杂任务自动完成</div>
                                 </div>
                                 <div class="tag rounded-xl p-4">
-                                    <div class="font-bold text-accio-cyan mb-1">自我进化</div>
-                                    <div class="text-sm text-gray-400">持续学习优化任务执行能力</div>
+                                    <div class="font-bold text-accio-blue mb-1">自我进化</div>
+                                    <div class="text-sm text-gray-500">持续学习优化任务执行能力</div>
                                 </div>
                                 <div class="tag rounded-xl p-4">
-                                    <div class="font-bold text-accio-cyan mb-1">主动响应</div>
-                                    <div class="text-sm text-gray-400">从被动问答到主动商业行动</div>
+                                    <div class="font-bold text-accio-blue mb-1">主动响应</div>
+                                    <div class="text-sm text-gray-500">从被动问答到主动商业行动</div>
                                 </div>
                                 <div class="tag rounded-xl p-4">
-                                    <div class="font-bold text-accio-cyan mb-1">丰富 Skills 生态</div>
-                                    <div class="text-sm text-gray-400">零上手成本，企业级安全保障</div>
+                                    <div class="font-bold text-accio-blue mb-1">丰富 Skills 生态</div>
+                                    <div class="text-sm text-gray-500">零上手成本，企业级安全保障</div>
                                 </div>
                             </div>
-                            <div class="mt-8 pt-6 border-t border-white/10">
-                                <div class="text-sm text-gray-400 mb-1">全球上线时间</div>
-                                <div class="text-xl font-bold text-white">2026 年 3 月 24 日</div>
+                            <div class="mt-8 pt-6 border-t border-gray-200">
+                                <div class="text-sm text-gray-500 mb-1">全球上线时间</div>
+                                <div class="text-xl font-bold text-gray-900">2026 年 3 月 24 日</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="order-1 md:order-2 section-fade" style="transition-delay: 0.15s;">
                     <div class="accent-line mb-6"></div>
-                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">Accio Work</h2>
-                    <p class="text-accio-cyan text-lg font-medium mb-6">全球首个专为商业打造的 AI 智能体平台</p>
-                    <p class="text-gray-300 leading-relaxed mb-6">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900">Accio Work</h2>
+                    <p class="text-accio-blue text-lg font-medium mb-6">全球首个专为商业打造的 AI 智能体平台</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
                         打破传统聊天的局限，真正执行商业任务。Accio Work 将中小企业的日常工作全面自动化——从调研分析、寻源谈判，到销售营销、店铺运营，一站式全搞定。
                     </p>
-                    <p class="text-gray-300 leading-relaxed mb-8">
+                    <p class="text-gray-600 leading-relaxed mb-8">
                         平台内置数百项实用技能，老板们无需懂技术、没有额外运维负担，就能轻松实现收益最大化。一人跨国公司，来了。
                     </p>
                     <div class="flex flex-wrap gap-3">
@@ -437,7 +437,7 @@
                         <span class="tag px-4 py-2 rounded-full text-sm">后运营链路</span>
                     </div>
                     <div class="mt-8">
-                        <a href="https://www.accio.com/work" target="_blank" class="text-accio-cyan hover:text-accio-gold transition-colors inline-flex items-center gap-2">
+                        <a href="https://www.accio.com/work" target="_blank" class="text-accio-blue hover:text-accio-orange transition-colors inline-flex items-center gap-2">
                             访问 Accio Work
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                         </a>
@@ -452,8 +452,8 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 section-fade">
                 <div class="accent-line mx-auto mb-6"></div>
-                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">为什么要加入我们</h2>
-                <p class="text-gray-300 text-lg">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900">为什么要加入我们</h2>
+                <p class="text-gray-600 text-lg">
                     Accio 团队正在通过技术-产品-商业化全链路闭环，探索更多技术与商业化的可能性，期待对大模型 AI 应用具有探索热情的同学加入。
                 </p>
             </div>
@@ -461,8 +461,8 @@
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="section-fade job-card rounded-3xl p-8 highlight-border" style="transition-delay: 0.1s;">
                     <div class="text-5xl mb-6">🌐</div>
-                    <h3 class="font-display text-2xl font-bold mb-4 text-white">全球舞台 · 真实场景</h3>
-                    <ul class="space-y-3 text-gray-300 text-sm leading-relaxed">
+                    <h3 class="font-display text-2xl font-bold mb-4 text-gray-900">全球舞台 · 真实场景</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm leading-relaxed">
                         <li>孵化于阿里巴巴第一个业务，26 年+ 发展历史</li>
                         <li>真实业务数据丰富，与 200+ 国家和地区用户交流</li>
                         <li>全球 10 亿+ 多模态商品、全网供给数据</li>
@@ -471,8 +471,8 @@
 
                 <div class="section-fade job-card rounded-3xl p-8 highlight-border" style="transition-delay: 0.2s;">
                     <div class="text-5xl mb-6">🚀</div>
-                    <h3 class="font-display text-2xl font-bold mb-4 text-white">前沿技术 · 优质团队</h3>
-                    <ul class="space-y-3 text-gray-300 text-sm leading-relaxed">
+                    <h3 class="font-display text-2xl font-bold mb-4 text-gray-900">前沿技术 · 优质团队</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm leading-relaxed">
                         <li>积极探索 Agent 新范式、Agent Model、自进化等前沿技术</li>
                         <li>多语言、多文化工作环境，简单务实文化</li>
                         <li>组织架构扁平，海量数据、丰富算力、先进 AI 基础设施</li>
@@ -481,8 +481,8 @@
 
                 <div class="section-fade job-card rounded-3xl p-8 highlight-border" style="transition-delay: 0.3s;">
                     <div class="text-5xl mb-6">💎</div>
-                    <h3 class="font-display text-2xl font-bold mb-4 text-white">定制培养 · 快速成长</h3>
-                    <ul class="space-y-3 text-gray-300 text-sm leading-relaxed">
+                    <h3 class="font-display text-2xl font-bold mb-4 text-gray-900">定制培养 · 快速成长</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm leading-relaxed">
                         <li>定制化培养计划与多样化创新课题</li>
                         <li>快速晋升通道、多样激励机制</li>
                         <li>极具竞争力的薪酬回报，房补餐补入职补贴一应俱全</li>
@@ -493,12 +493,12 @@
     </section>
 
     <!-- Roles -->
-    <section id="roles" class="relative py-24 md:py-32 bg-gradient-to-b from-transparent via-accio-navy/20 to-transparent">
+    <section id="roles" class="relative py-24 md:py-32 bg-gradient-to-b from-transparent via-gray-100/30 to-transparent">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-12 section-fade">
                 <div class="accent-line mx-auto mb-6"></div>
-                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">国内在招岗位</h2>
-                <p class="text-gray-300 text-lg">杭州 · 实时更新 · 期待你的加入</p>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900">国内在招岗位</h2>
+                <p class="text-gray-600 text-lg">杭州 · 实时更新 · 期待你的加入</p>
             </div>
 
             <div class="flex flex-wrap justify-center gap-3 mb-12 section-fade">
@@ -512,15 +512,15 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-gold border border-accio-orange/30">算法 · 算法工程化</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-orange border border-accio-orange/30">算法 · 算法工程化</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Agentic Search 算法工程师/专家 - Accio</h3>
-                        <p class="text-sm text-gray-400 mb-4">AI 搜 · Agent 系统 · Agent Model · Agentic RL · RL · LLM/VLM · Agent Infra</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022935018" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Agentic Search 算法工程师/专家 - Accio</h3>
+                        <p class="text-sm text-gray-500 mb-4">AI 搜 · Agent 系统 · Agent Model · Agentic RL · RL · LLM/VLM · Agent Infra</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022935018" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -528,15 +528,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-gold border border-accio-orange/30">算法 · 算法工程化</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-orange border border-accio-orange/30">算法 · 算法工程化</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Agent 算法工程师/专家 - Accio</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agent 系统 · Agent Model · 大模型应用</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022915005" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Agent 算法工程师/专家 - Accio</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agent 系统 · Agent Model · 大模型应用</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022915005" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -544,15 +544,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-gold border border-accio-orange/30">算法 · 算法工程化</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-orange border border-accio-orange/30">算法 · 算法工程化</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">大模型后训练算法工程师/专家 - Accio</h3>
-                        <p class="text-sm text-gray-400 mb-4">Post-training · RLHF · 模型优化</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022915018" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">大模型后训练算法工程师/专家 - Accio</h3>
+                        <p class="text-sm text-gray-500 mb-4">Post-training · RLHF · 模型优化</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022915018" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -560,15 +560,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-gold border border-accio-orange/30">算法 · 算法工程化</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-orange border border-accio-orange/30">算法 · 算法工程化</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Agent 后训练算法工程师/专家 - Accio</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agent Post-training · 长程任务训练</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100012355025" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Agent 后训练算法工程师/专家 - Accio</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agent Post-training · 长程任务训练</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100012355025" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -576,15 +576,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-gold border border-accio-orange/30">算法 · 算法工程化</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-orange border border-accio-orange/30">算法 · 算法工程化</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Agentic Post-Training 算法工程师/专家 - Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agentic Post-training · 商业 Agent 训练</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022975010" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Agentic Post-Training 算法工程师/专家 - Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agentic Post-training · 商业 Agent 训练</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022975010" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -592,15 +592,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-gold border border-accio-orange/30">算法 · 算法工程化</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-orange/20 text-accio-orange border border-accio-orange/30">算法 · 算法工程化</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Agent 算法工程师/专家 - Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">Native AI Agent · 商业任务执行</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100012415019" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Agent 算法工程师/专家 - Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">Native AI Agent · 商业任务执行</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100012415019" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -608,15 +608,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-blue/20 text-accio-cyan border border-accio-blue/30">产品</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-blue/20 text-accio-blue border border-accio-blue/30">产品</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Accio 企业客户解决方案架构师 - 杭州</h3>
-                        <p class="text-sm text-gray-400 mb-4">协助产品、技术负责 KA · 电商行业优先 · 需要英文口语</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022955053" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Accio 企业客户解决方案架构师 - 杭州</h3>
+                        <p class="text-sm text-gray-500 mb-4">协助产品、技术负责 KA · 电商行业优先 · 需要英文口语</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100022955053" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -624,19 +624,26 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-accio-blue/20 text-accio-cyan border border-accio-blue/30">产品</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-accio-blue/20 text-accio-blue border border-accio-blue/30">产品</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">AI 产品专家（多模态方向）- Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">多模态产品 · AI 应用 · 商业场景落地</p>
-                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100023735002" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">AI 产品专家（多模态方向）- Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">多模态产品 · AI 应用 · 商业场景落地</p>
+                        <a href="https://aidc-jobs.alibaba.com/off-campus/position-detail?lang=zh&positionId=100023735002" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
+                </div>
+            </div>
+
+<div class="mt-8 flex justify-center section-fade">
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center max-w-sm">
+                    <p class="text-sm text-gray-500 mb-3">以上社招岗位均可扫码投递（不用完全对应岗位名称，内部已经打通）</p>
+                    <img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/v9kqDejr62JDaOVx/img/819f1bd8-5481-41a2-aefc-26321498a811.png" alt="社招投递二维码" class="w-40 h-40 mx-auto rounded-xl">
                 </div>
             </div>
 
@@ -646,8 +653,8 @@
                     <div class="flex items-start gap-4">
                         <div class="text-4xl">🎓</div>
                         <div>
-                            <h3 class="text-xl font-bold text-white mb-2">27 校招 / 阿里星 / Bravo Star 人才计划</h3>
-                            <p class="text-gray-300 text-sm leading-relaxed">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">27 校招 / 阿里星 / Bravo Star 人才计划</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
                                 毕业时间：2026 年 11 月 ～ 2027 年 10 月。重点研究方向包括 Agentic Post-training、Accio Work Agentic 后训练、面向异步长程任务的主动式 Agent、LLM and Multimodal Post-training、Agentic RL、Agent 自进化等。
                             </p>
                         </div>
@@ -657,15 +664,15 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">阿里星 / Bravo Star</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-purple-500/20 text-purple-700 border border-purple-500/30">阿里星 / Bravo Star</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">面向异步长程任务的主动式 Agent 研究</h3>
-                        <p class="text-sm text-gray-400 mb-4">阿里星 / Bravo Star · 主动式 Agent · 异步长程任务</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199903560013?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">面向异步长程任务的主动式 Agent 研究</h3>
+                        <p class="text-sm text-gray-500 mb-4">阿里星 / Bravo Star · 主动式 Agent · 异步长程任务</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199903560013?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -673,15 +680,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">阿里星 / Bravo Star</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-purple-500/20 text-purple-700 border border-purple-500/30">阿里星 / Bravo Star</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Agentic Post-training</h3>
-                        <p class="text-sm text-gray-400 mb-4">阿里星 / Bravo Star · Agent 后训练 · RL</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199903520008?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Agentic Post-training</h3>
+                        <p class="text-sm text-gray-500 mb-4">阿里星 / Bravo Star · Agent 后训练 · RL</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199903520008?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -689,30 +696,38 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">阿里星 / Bravo Star</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-purple-500/20 text-purple-700 border border-purple-500/30">阿里星 / Bravo Star</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Accio Work Agentic 后训练</h3>
-                        <p class="text-sm text-gray-400 mb-4">阿里星 / Bravo Star · Accio Work · 商业 Agent 训练</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199903520009?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Accio Work Agentic 后训练</h3>
+                        <p class="text-sm text-gray-500 mb-4">阿里星 / Bravo Star · Accio Work · 商业 Agent 训练</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199903520009?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
 
-                    <div class="job-card rounded-2xl p-6 border-dashed border-2 border-white/10">
+                    <div class="job-card rounded-2xl p-6 border-dashed border-2 border-gray-200">
                         <div class="flex items-start gap-4">
                             <div class="text-3xl">✨</div>
                             <div>
-                                <h3 class="text-lg font-bold text-white mb-2">更多校招岗位敬请期待</h3>
-                                <p class="text-sm text-gray-400 mb-3">正式批即将开启，也可从上方岗位先行投递</p>
-                                <span class="text-xs text-accio-gold">内推码：2T4GO3UV</span>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">更多校招岗位敬请期待</h3>
+                                <p class="text-sm text-gray-500 mb-3">正式批即将开启，也可从上方岗位先行投递</p>
+                                <span class="text-xs text-accio-orange">内推码：2T4GO3UV</span>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+<div class="mt-8 flex justify-center section-fade">
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center max-w-sm">
+                    <p class="text-sm text-gray-500 mb-3">阿里星 / Bravo Star / 校招岗位扫码投递</p>
+                    <p class="text-xs text-gray-500 mb-3">内推码：2T4GO3UV</p>
+                    <img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/v9kqDejr62JDaOVx/img/e1478afa-90ac-4637-9a7e-2636df59ffc5.png" alt="校招投递二维码" class="w-40 h-40 mx-auto rounded-xl">
                 </div>
             </div>
 
@@ -722,8 +737,8 @@
                     <div class="flex items-start gap-4">
                         <div class="text-4xl">🔬</div>
                         <div>
-                            <h3 class="text-xl font-bold text-white mb-2">日常实习 / 研究型实习</h3>
-                            <p class="text-gray-300 text-sm leading-relaxed">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">日常实习 / 研究型实习</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
                                 毕业时间：2027 年 11 月及之后。面向对 Agent、RL、多模态、后训练等方向有研究热情的在校生，提供深入一线 AI 产品研发的机会。
                             </p>
                         </div>
@@ -733,15 +748,15 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">研究型实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">研究型实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">研究型实习生 - Agentic RL - Accio</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agentic RL · 强化学习 · Agent 训练</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199907800001?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">研究型实习生 - Agentic RL - Accio</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agentic RL · 强化学习 · Agent 训练</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199907800001?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -749,15 +764,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">研究型实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">研究型实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">研究型实习生 - Agentic Search - Accio</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agentic Search · AI 搜索 · 检索增强</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199907620002?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">研究型实习生 - Agentic Search - Accio</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agentic Search · AI 搜索 · 检索增强</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199907620002?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -765,15 +780,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">研究型实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">研究型实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">研究型实习生 - Agentic RL - Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agentic RL · Accio Work · 强化学习</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199907640003?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">研究型实习生 - Agentic RL - Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agentic RL · Accio Work · 强化学习</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199907640003?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -781,15 +796,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">研究型实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">研究型实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">研究型实习生 - 多模态算法 - Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">多模态 · VLM · 图文理解</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199907780004?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">研究型实习生 - 多模态算法 - Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">多模态 · VLM · 图文理解</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199907780004?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -797,15 +812,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">算法实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">算法实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Agentic Post-Training 算法实习生</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agentic Post-training · 后训练算法</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199903700001?deptCodes=" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Agentic Post-Training 算法实习生</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agentic Post-training · 后训练算法</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199903700001?deptCodes=" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -813,15 +828,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">算法实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">算法实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">大模型应用算法实习生（Agent 训练/Agent 自进化）- Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agent 训练 · Agent 自进化 · 大模型应用</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199904820004?deptCodes=" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">大模型应用算法实习生（Agent 训练/Agent 自进化）- Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agent 训练 · Agent 自进化 · 大模型应用</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199904820004?deptCodes=" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -829,15 +844,15 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">研究型实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">研究型实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">研究型实习生 - Agent 模型后训练 - Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agent Model · Post-training · 模型优化</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199907640002?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">研究型实习生 - Agent 模型后训练 - Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agent Model · Post-training · 模型优化</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199907640002?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -845,19 +860,29 @@
 
                     <div class="job-card rounded-2xl p-6">
                         <div class="flex items-start justify-between mb-4">
-                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-300 border border-green-500/30">研究型实习</span>
-                            <span class="text-gray-400 text-sm flex items-center gap-1">
+                            <span class="role-badge px-3 py-1 rounded-full bg-green-500/20 text-green-700 border border-green-500/30">研究型实习</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 杭州
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">研究型实习生 - Agent Harness - Accio Work</h3>
-                        <p class="text-sm text-gray-400 mb-4">Agent Harness · 评测体系 · Agent 能力评估</p>
-                        <a href="https://campus-talent.alibaba.com/campus/position/199907780003?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-cyan hover:text-accio-gold transition-colors text-sm font-medium">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">研究型实习生 - Agent Harness - Accio Work</h3>
+                        <p class="text-sm text-gray-500 mb-4">Agent Harness · 评测体系 · Agent 能力评估</p>
+                        <a href="https://campus-talent.alibaba.com/campus/position/199907780003?deptCodes=AT1LW3" target="_blank" class="inline-flex items-center gap-2 text-accio-blue hover:text-accio-orange transition-colors text-sm font-medium">
                             立即投递
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+                <div class="mt-12 text-center text-gray-500 text-sm section-fade">
+                📌 Tips：非常期待和大家的交流~~，HR 微信 晨曦：ccchenxi333，HR 邮箱：accio-hr@alibaba-inc.com
+            </div>
+<div class="mt-8 flex justify-center section-fade">
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center max-w-sm">
+                    <p class="text-sm text-gray-500 mb-3">日常实习 / 研究型实习扫码投递</p>
+                    <img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/v9kqDejr62JDaOVx/img/b971cbba-4e2a-4edc-a70b-4f482662d57c.png" alt="实习投递二维码" class="w-40 h-40 mx-auto rounded-xl">
                 </div>
             </div>
         </div>
@@ -868,39 +893,44 @@
         <div class="max-w-5xl mx-auto px-6">
             <div class="section-fade">
                 <div class="relative">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-accio-orange/20 via-accio-cyan/20 to-accio-blue/20 rounded-3xl blur-3xl"></div>
+                    <div class="absolute -inset-4 bg-gradient-to-r from-accio-orange/10 via-accio-cyan/10 to-accio-blue/10 rounded-3xl blur-3xl"></div>
                     <div class="relative job-card rounded-3xl p-8 md:p-12 highlight-border text-center">
                         <div class="accent-line mx-auto mb-6"></div>
-                        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">加入我们</h2>
-                        <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-10">
+                        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900">加入我们</h2>
+                        <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
                             非常期待和大家的交流，无论是咨询、投递、交流还是保持联系，都欢迎随时联系 HR 晨曦。
                         </p>
 
-                        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
+                        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
                             <div class="tag rounded-2xl p-6 text-left">
-                                <div class="text-sm text-gray-400 mb-2">HR 微信</div>
-                                <div class="text-xl font-bold text-white mb-2">ccchenxi333</div>
+                                <div class="text-sm text-gray-500 mb-2">HR 微信</div>
+                                <div class="text-xl font-bold text-gray-900 mb-2">ccchenxi333</div>
                                 <div class="text-xs text-gray-500">备注：姓名+公司/学校+方向/岗位/诉求</div>
                             </div>
                             <div class="tag rounded-2xl p-6 text-left">
-                                <div class="text-sm text-gray-400 mb-2">校招内推码</div>
-                                <div class="text-xl font-bold text-accio-gold mb-2">2T4GO3UV</div>
+                                <div class="text-sm text-gray-500 mb-2">校招内推码</div>
+                                <div class="text-xl font-bold text-accio-orange mb-2">2T4GO3UV</div>
                                 <div class="text-xs text-gray-500">投递时选择"阿里国际数字商业集团 - Accio"</div>
+                            </div>
+                            <div class="tag rounded-2xl p-6 text-left">
+                                <div class="text-sm text-gray-500 mb-2">HR 邮箱</div>
+                                <div class="text-xl font-bold text-gray-900 mb-2">accio-hr@alibaba-inc.com</div>
+                                <div class="text-xs text-gray-500">咨询/投递/交流均可邮件联系</div>
                             </div>
                         </div>
 
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="https://aidc-jobs.alibaba.com/" target="_blank" class="btn-primary px-8 py-4 rounded-full text-white font-bold inline-flex items-center justify-center gap-2">
+                            <a href="https://aidc-jobs.alibaba.com/" target="_blank" class="btn-primary px-8 py-4 rounded-full text-gray-900 font-bold inline-flex items-center justify-center gap-2">
                                 社招官网投递
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                             </a>
-                            <a href="https://campus-talent.alibaba.com/" target="_blank" class="btn-secondary px-8 py-4 rounded-full text-white font-bold inline-flex items-center justify-center gap-2">
+                            <a href="https://campus-talent.alibaba.com/" target="_blank" class="btn-secondary px-8 py-4 rounded-full text-gray-900 font-bold inline-flex items-center justify-center gap-2">
                                 校招官网投递
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                             </a>
                         </div>
 
-                        <div class="mt-10 pt-8 border-t border-white/10 text-sm text-gray-500">
+                        <div class="mt-10 pt-8 border-t border-gray-200 text-sm text-gray-500">
                             工作地点：中国杭州、美国 Sunnyvale
                         </div>
                     </div>
@@ -910,13 +940,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="relative py-12 border-t border-white/5">
+    <footer class="relative py-12 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <div class="flex items-center justify-center gap-3 mb-4">
-                <span class="accio-logo h-7 w-14" role="img" aria-label="Accio Work"></span>
+                <span class="font-display font-bold text-xl text-gradient italic">Accio Work</span>
             </div>
             <p class="text-gray-500 text-sm mb-4">阿里巴巴阿里国际 · Native AI Agent</p>
-            <p class="text-gray-600 text-xs">
+            <p class="text-gray-500 text-xs">
                 本页面信息仅供参考，具体岗位以官方招聘网站实时信息为准。
             </p>
         </div>
